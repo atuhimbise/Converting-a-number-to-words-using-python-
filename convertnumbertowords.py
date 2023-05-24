@@ -22,4 +22,4 @@ def num2words(num):
 #This takes in the user input and saves it as variable name num
 num = int(input("Enter a number: "))
 #This outputs the input num to words.
-print("Output: ", print(num2words(num))
+print(num2words(num))

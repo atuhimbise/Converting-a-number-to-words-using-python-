@@ -13,7 +13,7 @@ def num2words(num):
 
 	if num < 100: 
 #This converts num to tens and ones and combines them to get words for any given num   
-		return 'and ' + tens[(int)(num/10)-2] + '-' + (''if num%10==0 else' ' + under_20[num%10]) 
+		return 'and ' + tens[(int)(num/10)-2] + '-' + (''if num%10==0 else'' + under_20[num%10]) 
  
 # find the appropriate pivot - 'Million' in 3,603,550, or 'Thousand' in 603,550 
 	pivot = max([key for key in above_100.keys() if key <= num]) 
